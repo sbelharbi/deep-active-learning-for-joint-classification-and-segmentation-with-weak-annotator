@@ -380,6 +380,7 @@ def scan_all():
 
     # plot curves following some order.
     keys_methds = [key for key in order_plot if key in list(methods.keys())]
+    store_out = dict()
 
     for al_type in keys_methds:
         l_stats = methods[al_type]["l_stats"]
@@ -430,6 +431,14 @@ def scan_all():
             tmp_stats['dice_idx'] = np.array(tmp_stats['dice_idx'])
             tmp_auc['acc'] = np.array(tmp_auc['acc'])
             tmp_auc['dice_idx'] = np.array(tmp_auc['dice_idx'])
+
+            store_out[al_type] = dict()
+            if kset not in store_out[al_type].keys():
+                store_out[al_type][kset] = dict()
+
+            store_out[al_type][kset]['dice_idx'] = copy.deepcopy(
+                tmp_stats['dice_idx']
+            )
 
             print(tmp_stats['acc'].shape, al_type, kset)
             print(tmp_stats['dice_idx'].shape, al_type, kset)
