@@ -1,0 +1,2 @@
+min h 120, 	 max h 500
+min w 121, 	 max w 500

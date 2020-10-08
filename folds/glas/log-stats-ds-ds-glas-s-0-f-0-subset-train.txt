@@ -1,0 +1,2 @@
+min h 430, 	 max h 522
+min w 567, 	 max w 775

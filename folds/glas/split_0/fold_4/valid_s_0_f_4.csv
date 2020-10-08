@@ -1,0 +1,13 @@
+108,train_35.bmp,train_35_anno.bmp,malignant,0
+142,train_66.bmp,train_66_anno.bmp,malignant,0
+84,train_13.bmp,train_13_anno.bmp,malignant,0
+81,train_10.bmp,train_10_anno.bmp,malignant,0
+112,train_39.bmp,train_39_anno.bmp,malignant,0
+123,train_49.bmp,train_49_anno.bmp,malignant,0
+101,train_29.bmp,train_29_anno.bmp,malignant,0
+95,train_23.bmp,train_23_anno.bmp,malignant,0
+143,train_67.bmp,train_67_anno.bmp,benign,0
+119,train_45.bmp,train_45_anno.bmp,benign,0
+163,train_85.bmp,train_85_anno.bmp,benign,0
+86,train_15.bmp,train_15_anno.bmp,benign,0
+162,train_84.bmp,train_84_anno.bmp,benign,0
