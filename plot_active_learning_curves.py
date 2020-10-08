@@ -558,6 +558,11 @@ def scan_all():
     fout.close()
     fcsv.close()
 
+    with open(join(output_fd, "results-per-method-each-run-dataset-"
+                              "{}.pkl".format(dataset)), "wb"
+              ) as fout:
+        pkl.dump(store_out, fout, protocol=pkl.HIGHEST_PROTOCOL)
+
 
 if __name__ == "__main__":
     scan_all()
