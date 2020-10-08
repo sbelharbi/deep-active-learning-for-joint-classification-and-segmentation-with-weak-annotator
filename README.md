@@ -5,7 +5,7 @@ See the paper in [./paper/paper.pdf](./paper/paper.pdf) and its supplementary
  material [./paper/supp-mat.pdf](./paper/supp-mat.pdf).
 
 ### Issues:
-Please create an a github issue.
+Please create a github issue.
 
 ### Content:
 * [Method highlights](#method)
