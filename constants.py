@@ -117,12 +117,26 @@ RESNEXT101_32X8D = 'resnext101_32x8d'
 WIDE_RESNET50_2 = 'wide_resnet50_2'
 WIDE_RESNET101_2 = 'wide_resnet101_2'
 
-backbones = [RESNET18, RESNET34, RESNET50, RESNET101, RESNET152,
-             RESNEXT50_32X4D, RESNEXT101_32X8D, WIDE_RESNET50_2,
-             WIDE_RESNET101_2]
-resnet_backbones = [RESNET18, RESNET34, RESNET50, RESNET101, RESNET152,
-                    RESNEXT50_32X4D, RESNEXT101_32X8D, WIDE_RESNET50_2,
-                    WIDE_RESNET101_2]
+backbones = [RESNET18,
+             RESNET34,
+             RESNET50,
+             RESNET101,
+             RESNET152,
+             RESNEXT50_32X4D,
+             RESNEXT101_32X8D,
+             WIDE_RESNET50_2,
+             WIDE_RESNET101_2
+             ]
+resnet_backbones = [RESNET18,
+                    RESNET34,
+                    RESNET50,
+                    RESNET101,
+                    RESNET152,
+                    RESNEXT50_32X4D,
+                    RESNEXT101_32X8D,
+                    WIDE_RESNET50_2,
+                    WIDE_RESNET101_2
+                    ]
 
 # segmentation losses
 BinSoftInvDiceLoss = 'BinSoftInvDiceLoss'

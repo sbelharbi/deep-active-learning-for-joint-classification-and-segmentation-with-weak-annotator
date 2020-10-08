@@ -4,6 +4,9 @@
 See the paper in [./paper/paper.pdf](./paper/paper.pdf) and its supplementary
  material [./paper/supp-mat.pdf](./paper/supp-mat.pdf).
 
+### Issues:
+Please create an a github issue.
+
 ### Content:
 * [Method highlights](#method)
 * [Datasets](#datasets)
@@ -14,24 +17,25 @@ See the paper in [./paper/paper.pdf](./paper/paper.pdf) and its supplementary
 
 #### <a name="method"></a> Method highlights:
 * Method: 
-<img src="doc/proposal.png" alt="proposal" width="1000">
+<img src="doc/proposal.png" alt="proposal" width="400">
 
 * Knn: 
-<img src="doc/knn.png" alt="knn" width="1000">
+<img src="doc/knn.png" alt="knn" width="400">
 
 * Architecture:
-<img src="doc/arch.png" alt="achitecture" width="1000">
+<img src="doc/arch.png" alt="achitecture" width="400">
 
 * Algorithm:
-<img src="doc/algo.png" alt="algorithm" width="1000"/>
+<img src="doc/algo.png" alt="algorithm" width="400"/>
 
 * Perfromance:
-<img src="doc/perf.png" alt="performance table" width="1000"/>
+<img src="doc/perf.png" alt="performance table" width="400"/>
 
-<img src="doc/results.png" alt="performance curves" width="1000"/>
+<img src="doc/results.png" alt="performance curves" width="400"/>
 
 * Pseudo-labeling performance:
-<img src="doc/pseudo-labeling.png" alt="pseudo-labeling performance" width="1000"/>
+<img src="doc/pseudo-labeling.png" alt="pseudo-labeling performance" width
+="400"/>
 
 #### <a name="datasets"></a> Download datasets:
 

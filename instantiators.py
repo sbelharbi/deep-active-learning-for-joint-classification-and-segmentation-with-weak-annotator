@@ -108,13 +108,19 @@ def instantiate_models(args, verbose=True):
     elif args.task == constants.SEG:
         if p.name_model == 'hybrid_model':
             model = models_seg.__dict__[p.name_model](
-                num_classes=args.num_classes, num_masks=args.num_masks,
-                backbone=p.backbone, pretrained=p.pre_trained,
-                modalities=p.modalities, kmax=p.kmax,
-                kmin=p.kmin, alpha=p.alpha, dropout=p.dropout,
+                num_classes=args.num_classes,
+                num_masks=args.num_masks,
+                backbone=p.backbone,
+                pretrained=p.pre_trained,
+                modalities=p.modalities,
+                kmax=p.kmax,
+                kmin=p.kmin,
+                alpha=p.alpha,
+                dropout=p.dropout,
                 backbone_dropout=p.backbone_dropout,
                 freeze_classifier=args.freeze_classifier,
-                base_width=p.base_width, leak=p.leak
+                base_width=p.base_width,
+                leak=p.leak
             )
         else:
             raise ValueError("Unknown model name for SEG task: {}".format(
