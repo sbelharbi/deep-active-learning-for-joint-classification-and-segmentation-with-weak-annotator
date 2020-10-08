@@ -1,4 +1,4 @@
-### Pytorch code for: 
+### Pytorch 1.4.0 code for: 
 `Deep Active Learning for Joint Classification & Segmentation with Weak Annotator`
 ### Citation:
 ```
@@ -41,8 +41,7 @@ Please create a github issue.
 <img src="doc/results.png" alt="performance curves" width="400"/>
 
 * Pseudo-labeling performance:
-<img src="doc/pseudo-labeling.png" alt="pseudo-labeling performance" width
-="400"/>
+<img src="doc/pseudo-labeling.png" alt="pseudo-labeling performance" width="400"/>
 
 #### <a name="datasets"></a> Download datasets:
 
