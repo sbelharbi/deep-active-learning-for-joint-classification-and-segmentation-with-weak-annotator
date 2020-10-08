@@ -1,8 +1,15 @@
 ### Pytorch code for: 
 `Deep Active Learning for Joint Classification & Segmentation with Weak Annotator`
-
-See the paper in [./paper/paper.pdf](./paper/paper.pdf) and its supplementary
- material [./paper/supp-mat.pdf](./paper/supp-mat.pdf).
+### Citation:
+```
+@article{belharbi2020deep_al_join_cl_seg_weak_ann,
+  title={Deep Active Learning for Joint Classification & Segmentation with Weak Annotator},
+  author={Belharbi, S. and Ben Ayed, I. and McCaffrey, L. and Granger, E.},
+  journal={coRR},
+  volume={abs/XXXX.XXXXX},
+  year={2020}
+}
+```
 
 ### Issues:
 Please create a github issue.
