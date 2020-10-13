@@ -1,12 +1,12 @@
-### Pytorch 1.4.0 code for: 
+### Pytorch 1.4.0 code for:
 `Deep Active Learning for Joint Classification & Segmentation with Weak Annotator`
 ### Citation:
 ```
 @article{belharbi2020deep_al_join_cl_seg_weak_ann,
   title={Deep Active Learning for Joint Classification & Segmentation with Weak Annotator},
   author={Belharbi, S. and Ben Ayed, I. and McCaffrey, L. and Granger, E.},
-  journal={coRR},
-  volume={abs/XXXX.XXXXX},
+  journal={CoRR},
+  volume={abs/2010.04889},
   year={2020}
 }
 ```
@@ -23,10 +23,10 @@ Please create a github issue.
 
 
 #### <a name="method"></a> Method highlights:
-* Method: 
+* Method:
 <img src="doc/proposal.png" alt="proposal" width="400">
 
-* Knn: 
+* Knn:
 <img src="doc/knn.png" alt="knn" width="400">
 
 * Architecture:
@@ -53,7 +53,7 @@ You find the splits in [./folds](./folds). The code that generated the splits is
 
 
 #### <a name="requirements"></a> Requirements:
-We use [Pytorch 1.4.0](https://pytorch.org/) and 
+We use [Pytorch 1.4.0](https://pytorch.org/) and
 [Python 3.7.6](https://www.python.org). For installation, see [
 ./dependencies](./dependencies) for a way on how to install the requirements within a virtual environment.
 
@@ -64,7 +64,7 @@ We use [Pytorch 1.4.0](https://pytorch.org/) and
     ```bash
     python create_folds.py
     ```
-2. Generate yaml files: 
+2. Generate yaml files:
     ```bash
     python yaml-gen.py
     ```  
@@ -85,15 +85,15 @@ We use [Pytorch 1.4.0](https://pytorch.org/) and
     The file `run-glas-MC-Dropout.sh` contains all the experiments for this
     method/datasets. It is something like this:
     ```bash
-    #!/usr/bin/env bash 
-    
+    #!/usr/bin/env bash
+
     # ==============================================================================
     cudaid=$1
-    
-    #  Start MYSEED: 0 
-    
-    
-    
+
+    #  Start MYSEED: 0
+
+
+
     time python main.py --yaml glas.yaml --MYSEED 0 --optn0__name_optimizer sgd \
     --batch_size 20 --valid_batch_size 1 --optn0__lr 0.1 --optn0__weight_decay \
     0.0001 --optn0__momentum 0.9 --max_epochs 1000 --optn0__name_lr_scheduler \
@@ -120,9 +120,9 @@ We use [Pytorch 1.4.0](https://pytorch.org/) and
     --base_width 24 --leak 64 --seg_elbon False  --loss HybridLoss  --al_type \
     MC_Dropout  --al_it 0 --exp_id 10_03_2020_13_58_33_376747__3089229
     # ==============================================================================
-    
-    
-    
+
+
+
     time python main.py --yaml glas.yaml --MYSEED 0 --optn0__name_optimizer sgd \
     --batch_size 20 --valid_batch_size 1 --optn0__lr 0.1 --optn0__weight_decay \
     0.0001 --optn0__momentum 0.9 --max_epochs 1000 --optn0__name_lr_scheduler \
@@ -149,23 +149,23 @@ We use [Pytorch 1.4.0](https://pytorch.org/) and
     --base_width 24 --leak 64 --seg_elbon False  --loss HybridLoss  --al_type \
     MC_Dropout  --al_it 1 --exp_id 10_03_2020_13_58_33_376747__3089229
     # ==============================================================================
-    
-    ... and so on. 
+
+    ... and so on.
     ```
 
     See all the keys that you can override using the command line in  
     `parseit .get_yaml_args()`.
     See `constants.py` for the different active learning methods and other
     constants.
-4. First, run `WSL` method using seed `0`. Then, store the model's weights in 
-   `./pretrained/resnet18-glas.pt` for `GLAS` dataset, and 
+4. First, run `WSL` method using seed `0`. Then, store the model's weights in
+   `./pretrained/resnet18-glas.pt` for `GLAS` dataset, and
    `./pretrained/resnet18-cub.pt` for `CUB` dataset. The model's weight will
     be stored by the code in the experiment folder as `best_model.pt`. Copy
-     and rename that file to the pretrained folder. 
-    Then, you can proceed training other active learning methods. 
+     and rename that file to the pretrained folder.
+    Then, you can proceed training other active learning methods.
     For convenience, we provide the pre-trained models. They are also accessible
      on [google drive](https://drive.google.com/drive/folders/1EcW2NaNsaAiL38R7cHJruq5T60c20goG?usp=sharing).
-      If you are unable to access to the google drive folder, you can 
+      If you are unable to access to the google drive folder, you can
       create an issue to find a different way to share the models.
  5. To plot all the curves of ALL methods, you can use,
     ```bash
@@ -194,7 +194,7 @@ We use [Pytorch 1.4.0](https://pytorch.org/) and
      Out[33]: (5, 25)  # 5 runs order according to the seeds mentioned above.
      # each run has 25 active learning rounds.
      In [34]: stuff['Random']['test']['dice_idx']
-     Out[34]: 
+     Out[34]:
      array([[64.29491024, 68.26534145, 68.65601286, 73.98197889, 74.09444943,
             76.94103431, 71.02902677, 74.06351458, 72.56103337, 78.99458144,
             79.30639431, 82.01419845, 76.71336837, 84.38693479, 82.37608485,
@@ -220,25 +220,25 @@ We use [Pytorch 1.4.0](https://pytorch.org/) and
             81.71520639, 79.7781498 , 83.15113798, 83.77281189, 83.63054134,
             81.77533798, 84.02370453, 78.2903273 , 82.59848274, 82.92209167,
             83.00199233, 83.72783348, 86.06250815, 84.60930221, 84.13211673]])
-  
+
     ```
 
 
 #### General notes:
-* All the experiments, splits generation were achieved using seed 0. 
+* All the experiments, splits generation were achieved using seed 0.
 See [./create_folds.py](./create_folds.py)
 * All the results in the paper were obtained using one GPU.
 
 #### Paths:
-We hard-coded some paths (to the data location). For anonymization reasons, we 
+We hard-coded some paths (to the data location). For anonymization reasons, we
 replaced them with fictive paths.
-So, they won't work for you. A warning will be raised with an indication to 
+So, they won't work for you. A warning will be raised with an indication to
 the issue. Then, the code exits. It is something like this:
 ```python
 warnings.warn("You are accessing an anonymized part of the code. We are going to exit. Come here and fix this "
                   "according to your setup. Issue: absolute path to Caltech-UCSD-Birds-200-2011 dataset.")
 ```
-or 
+or
 ```python
 "Sorry, it seems we are enable to recognize the " \
 "host. You seem to be new to this code. " \
