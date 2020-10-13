@@ -1,5 +1,5 @@
 ### Pytorch 1.4.0 code for:
-`Deep Active Learning for Joint Classification & Segmentation with Weak Annotator`
+`Deep Active Learning for Joint Classification & Segmentation with Weak Annotator` ([https://arxiv.org/abs/2010.04889](https://arxiv.org/abs/2010.04889))
 ### Citation:
 ```
 @article{belharbi2020deep_al_join_cl_seg_weak_ann,
