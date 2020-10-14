@@ -19,7 +19,6 @@ Please create a github issue.
 * [Datasets](#datasets)
 * [Requirements](#requirements)
 * [How to run the code step-by-step](#runCode)
-* [Reproducibility](#reproducibility)
 
 
 #### <a name="method"></a> Method highlights:
