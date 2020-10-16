@@ -17,10 +17,11 @@ echo "Extracting files ..."
 
 unzip  warwick_qu_dataset_released_2016_07_08.zip
 
-echo "========================================================================================="
-echo "                               We aware of the SPACES in the folder name. "
-echo "                         Not sure whose idea was to put space in the folder name. "
-echo "                                    I let you to deal with it. "
-echo "========================================================================================="
+echo "========================================================================="
+echo "                 We are aware of the SPACES in the folder name. "
+echo "            Not sure whose idea was to put space in the folder name. "
+echo "                         I let you to deal with it. "
+echo "========================================================================="
+
 
 echo "Finished extracting  GlaS-2015."
