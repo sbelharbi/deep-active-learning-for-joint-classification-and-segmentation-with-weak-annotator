@@ -190,7 +190,7 @@ We use [Pytorch 1.4.0](https://pytorch.org/) and
      In [30]: type(stuff['Random']['test']['dice_idx'])
      Out[30]: numpy.ndarray
      In [33]: stuff['Random']['test']['dice_idx'].shape
-     Out[33]: (5, 25)  # 5 runs order according to the seeds mentioned above.
+     Out[33]: (5, 25)  # 5 runs ordered according to the seeds mentioned above.
      # each run has 25 active learning rounds.
      In [34]: stuff['Random']['test']['dice_idx']
      Out[34]:
