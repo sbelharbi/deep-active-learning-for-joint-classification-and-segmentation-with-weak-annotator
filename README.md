@@ -2,12 +2,11 @@
 `Deep Active Learning for Joint Classification & Segmentation with Weak Annotator` ([https://arxiv.org/abs/2010.04889](https://arxiv.org/abs/2010.04889))
 ### Citation:
 ```
-@article{belharbi2020DeepAlJoinClSegWeakAnn,
-  title={Deep Active Learning for Joint Classification \& Segmentation with Weak Annotator},
-  author={Belharbi, S. and Ben Ayed, I. and McCaffrey, L. and Granger, E.},
-  journal={CoRR},
-  volume={abs/2010.04889},
-  year={2020}
+@InProceedings{belharbi2020DeepAlJoinClSegWeakAnn,
+title = {Deep Active Learning for Joint Classification \& Segmentation with Weak Annotator},
+author = {Belharbi, S. and Ben Ayed, I. and McCaffrey, L. and Granger, E.},
+booktitle = {Proceedings of the IEEE/CVF Winter Conference on Applications of Computer Vision},
+year = {2021}
 }
 ```
 
