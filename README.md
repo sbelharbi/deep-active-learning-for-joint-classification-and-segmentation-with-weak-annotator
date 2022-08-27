@@ -9,6 +9,8 @@ booktitle = {Proceedings of the IEEE/CVF Winter Conference on Applications of Co
 year = {2021}
 }
 ```
+[Slides](./docs/wacv2021-active-learning-weak-annotator.pdf)
+
 
 ### Issues:
 Please create a github issue.
