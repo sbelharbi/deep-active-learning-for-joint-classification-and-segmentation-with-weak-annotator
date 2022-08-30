@@ -1,7 +1,7 @@
 ### Pytorch 1.4.0 code for:
 `Deep Active Learning for Joint Classification & Segmentation with Weak Annotator` ([https://arxiv.org/abs/2010.04889](https://arxiv.org/abs/2010.04889))
 
-### WACV 2021: [[Slides]](./doc/wacv2021-active-learning-weak-annotator.pdf)
+### WACV 2021: [[Slides]](./doc/wacv2021-active-learning-weak-annotator.pdf) [[Video presentation]](https://drive.google.com/file/d/1Ust05J9LaVj51KKK_8HYujk8TwpuY5Cq/view?usp=sharing) 
 
 ### Citation:
 ```
